@@ -1,0 +1,20 @@
+class Employee { 
+  
+      void display(String name,int age,String city){
+		 System.out.println("The name is "+name);
+		 System.out.println("The age is "+age);
+		 System.out.println("The city is "+city);
+ 
+	 }
+	public static void main(String[] args) 
+	{ 
+		String name="Naina"; 
+        int age=23;
+		String city="Bhandara";
+		Employee emp1 = new Employee(); 
+        emp1.display(name,age,city);
+		Employee emp2 = new Employee(); 
+		 emp2.display(name,age,city);
+	
+	} 
+} 
