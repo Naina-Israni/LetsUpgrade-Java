@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Percentage{
+public static void main(String args[]){
+int eng,maths,hindi,his,geo;
+float per,total;
+Scanner sc =new Scanner(System.in);
+System.out.print("Marks of English: ");
+eng=sc.nextInt();
+System.out.print("Marks of Maths: ");
+maths=sc.nextInt();
+System.out.print("Marks of Hindi: ");
+hindi=sc.nextInt();
+System.out.print("Marks of History: ");
+his=sc.nextInt();
+System.out.print("Marks of Geography: ");
+geo=sc.nextInt();
+total=eng+maths+hindi+his+geo;
+per=(total/600)*100;
+System.out.println("Your Percentage: "+per);
+if(per>=75){
+System.out.println("You are pass with Grade A+");
+}
+else if(per<75 && per>=65){
+System.out.println("You are pass with Grade A");
+}
+else if(per<65 && per>=55){
+System.out.println("You are pass with Grade B");
+}
+else if(per<55 && per>=45){
+System.out.println("You are pass with Grade C");
+}
+else{
+System.out.println("You are Fail");	
+}
+}
+}
